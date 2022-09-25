@@ -8,7 +8,7 @@ const Tours = () => {
     const [tours, setTours] = useState([]);
 
   useEffect(() => {
-    fetch("https://hidden-sea-94069.herokuapp.com/tours")
+    fetch("https://glacial-brushlands-74296.herokuapp.com/tours")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);

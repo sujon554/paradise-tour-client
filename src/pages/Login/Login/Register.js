@@ -30,7 +30,7 @@ const Register = () => {
 
     return (
         <Container>
-            <h1>Registration Here</h1>
+            <h1>Registration <strong className="text-success">Here</strong></h1>
             <Row>
                 
                 <Col>

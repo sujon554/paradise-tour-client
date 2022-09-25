@@ -13,7 +13,7 @@ const OrderWatch = () => {
   const { register, handleSubmit } = useForm();
 
   useEffect(() => {
-    fetch(`https://hidden-sea-94069.herokuapp.com/tours/${id}`)
+    fetch(`https://glacial-brushlands-74296.herokuapp.com/tours/${id}`)
       .then((res) => res.json())
       .then((data) => setSingleProduct(data));
   }, []);
@@ -22,7 +22,7 @@ const OrderWatch = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://hidden-sea-94069.herokuapp.com/allorders", data)
+      .post("https://glacial-brushlands-74296.herokuapp.com/allorders", data)
       .then((res) => {
         
         if (res.data.insertedId) {
