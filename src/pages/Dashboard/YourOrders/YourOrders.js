@@ -8,7 +8,7 @@ const YourOrders = () => {
 
   useEffect(() => {
     fetch(
-      `https://glacial-brushlands-74296.herokuapp.com/myorders?email=${user.email}`
+      `https://paradise-tour-server.onrender.com/myorders?email=${user.email}`
     )
       .then((res) => res.json())
       .then((data) => setOrders(data));
@@ -21,7 +21,7 @@ const YourOrders = () => {
       "Are you sure, you want to delete this package?"
     );
     if (proceed) {
-      fetch(`https://glacial-brushlands-74296.herokuapp.com/myorders/${id}`, {
+      fetch(`https://paradise-tour-server.onrender.com/myorders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

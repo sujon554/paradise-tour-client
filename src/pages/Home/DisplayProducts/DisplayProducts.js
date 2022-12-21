@@ -6,7 +6,7 @@ const DisplayProducts = () => {
   const [tours, setTours] = useState([]);
 
   useEffect(() => {
-    fetch("https://glacial-brushlands-74296.herokuapp.com/tours")
+    fetch("https://paradise-tour-server.onrender.com/tours")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);

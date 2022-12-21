@@ -9,7 +9,7 @@ const AddNewProduct = () => {
   const [success, setSuccess] = useState();
 
   const onSubmit = (data) => {
-    axios.post("https://glacial-brushlands-74296.herokuapp.com/tours", data).then((res) => {
+    axios.post("https://paradise-tour-server.onrender.com/tours", data).then((res) => {
       if (res.data.insertedId) {
         // alert("Package Addeded Successfully!");
         reset();
